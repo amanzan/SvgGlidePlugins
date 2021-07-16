@@ -21,7 +21,7 @@ buildscript {
 
     dependencies {
         //noinspection GradleDependency
-        classpath 'com.android.tools.build:gradle:4.0.0-beta03'
+        classpath 'com.android.tools.build:gradle:4.2.2'
     }
 }
 
@@ -34,6 +34,7 @@ allprojects {
     repositories {
         google()
         jcenter()
+        maven { url 'https://jitpack.io' }
     }
 }
 
@@ -45,7 +46,7 @@ ext {
     targetSdkVersion = 28
     minSdkVersion = 14
 
-    glideVersion = '4.11.0'
+    glideVersion = '4.12.0'
     androidSvgVersion = '1.4'
 
     versionName = '1.2.1'
